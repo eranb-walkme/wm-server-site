@@ -1,0 +1,22 @@
+<jsp:root version="2.2" xmlns:jsp="http://java.sun.com/JSP/Page"
+	xmlns:c="http://java.sun.com/jsp/jstl/core"
+	xmlns:fmt="http://java.sun.com/jsp/jstl/fmt"
+	xmlns:fn="http://java.sun.com/jsp/jstl/functions"
+	xmlns:f="http://www.springframework.org/tags/form"
+	xmlns:s="http://www.springframework.org/tags"
+	xmlns:v="urn:jsptagdir:/WEB-INF/tags/view">
+	<v:layout title="Landing Page">
+    <h1 id="header-count">Loading...</h1>
+    
+    <div>
+    	<ul id="list-task"/>
+    </div>
+    
+    <div>Add a new task</div>
+    
+    <div>
+    	<input id='label'/>
+    	<button id="button-create" onclick="createTaskFromUi()"> Create me </button>
+    </div>   
+	</v:layout>
+</jsp:root>
